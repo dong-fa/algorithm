@@ -52,6 +52,6 @@ const cookTime = parseInt(fileData[1]);
 
 if (nowMin + cookTime < 60) {
   console.log(nowHour + " " + (nowMin + cookTime));
-} else if (nowMin + cookTime >= 60 && nowHour < 23) {
+} else if (nowMin + cookTime >= 60 && nowHour <= 23) {
   console.log(((nowHour + Math.floor((nowMin + cookTime) / 60)) % 24) + " " + ((nowMin + cookTime) % 60));
 }
